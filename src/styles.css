@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.films-list {
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+/* FUTURE: Add more break point css here */
+@media screen and (min-width: 640px) {
+  .films-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.film {
+  padding: 10px;
+  border: 1px solid #666666;
+  border-radius: 8px;
+}
+
+.film-detail-button {
+  text-transform: capitalize;
+  padding: 4px;
+}
